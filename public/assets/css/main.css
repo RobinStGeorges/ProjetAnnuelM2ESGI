@@ -1,4 +1,14 @@
-body{
-    background: black;
-    color: lightgrey;
+@import "~bootstrap/scss/bootstrap";
+html{
+    background-color: #04080F;
+}
+
+P{
+    text-align: center;
+}
+
+.page{
+    margin: 3%;
+    background-color: #456990;
+    color:white;
 }
