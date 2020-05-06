@@ -1,14 +1,28 @@
 @import "~bootstrap/scss/bootstrap";
 html{
     background-color: #04080F;
+    padding: 1%;
+    font-family: Roboto, sans-serif;
 }
 
 P{
     text-align: center;
+    font-family: Roboto, sans-serif;
 }
 
 .page{
-    margin: 3%;
     background-color: #456990;
     color:white;
+    border-color: #F5B82E;
+    border-width : 2px ;
+    border-style: solid;
+    height: 90vh;
+}
+
+.content{
+    margin: 3%;
+    border-color: #F5B82E;
+    border-width : 2px ;
+    border-style: solid;
+    height: 80vh;
 }

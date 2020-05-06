@@ -9,7 +9,7 @@ class TesseraktCoursController
 {
     public function index(Environment $twig)
     {
-        $content = $twig->render('Advert/index.html.twig', ['name' => 'robin']);
+        $content = $twig->render('Advert/cours.html.twig', ['name' => 'robin']);
 
         return new Response($content);
     }
