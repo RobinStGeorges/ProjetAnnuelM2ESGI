@@ -28,3 +28,12 @@ P{
     height: 80vh;
 }
 
+.intro{
+    margin-top: 2% ;
+    padding-bottom:3%;
+
+}
+
+.intro h1{
+    text-shadow: 0 0 0.2em #F5B82E;
+}
