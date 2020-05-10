@@ -6,7 +6,7 @@
 use Symfony\Component\DependencyInjection\Dumper\Preloader;
 
 require dirname(__DIR__, 3).'\\vendor/autoload.php';
-require __DIR__.'/ContainerWWEMHbs/App_KernelDevDebugContainer.php';
+require __DIR__.'/Container4Fgf9hy/App_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -21,6 +21,7 @@ $classes[] = 'Symfony\Bundle\MonologBundle\MonologBundle';
 $classes[] = 'Symfony\Bundle\DebugBundle\DebugBundle';
 $classes[] = 'Symfony\Bundle\MakerBundle\MakerBundle';
 $classes[] = 'Symfony\WebpackEncoreBundle\WebpackEncoreBundle';
+$classes[] = 'Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle';
 $classes[] = 'Symfony\Component\HttpClient\TraceableHttpClient';
 $classes[] = 'Symfony\Contracts\HttpClient\HttpClientInterface';
 $classes[] = 'Symfony\Component\HttpClient\HttpClient';
@@ -30,6 +31,7 @@ $classes[] = 'Symfony\Component\DependencyInjection\ServiceLocator';
 $classes[] = 'App\Controller\TesseraktController';
 $classes[] = 'App\Controller\TesseraktCoursController';
 $classes[] = 'App\Controller\TesseraktExerciceController';
+$classes[] = 'App\Repository\CoursRepository';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\RedirectController';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController';
 $classes[] = 'Symfony\Component\Cache\DoctrineProvider';
@@ -147,6 +149,9 @@ $classes[] = 'Symfony\Bridge\Doctrine\Logger\DbalLogger';
 $classes[] = 'Symfony\Bridge\Doctrine\ContainerAwareEventManager';
 $classes[] = 'Doctrine\DBAL\Logging\DebugStack';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Command\Proxy\EnsureProductionSettingsDoctrineCommand';
+$classes[] = 'Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand';
+$classes[] = 'Doctrine\Bundle\FixturesBundle\Loader\SymfonyFixturesLoader';
+$classes[] = 'App\DataFixtures\AppFixtures';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Command\Proxy\ConvertMappingDoctrineCommand';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Command\ImportMappingDoctrineCommand';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Command\Proxy\InfoDoctrineCommand';
