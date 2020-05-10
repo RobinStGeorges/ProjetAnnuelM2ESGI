@@ -336,7 +336,6 @@
     <service id="App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" autoconfigure="true">
       <tag name="doctrine.fixture.orm"/>
     </service>
-    <service id="App\DataFixtures\CoursFixtures" class="App\DataFixtures\CoursFixtures" autowire="true" autoconfigure="true"/>
     <service id="App\Repository\CoursRepository" class="App\Repository\CoursRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
@@ -4923,14 +4922,16 @@
         <argument key="twig" type="service" id="twig"/>
       </argument>
     </service>
-    <service id=".service_locator.xVpwEMl" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.vZxI_2R" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\TesseraktController::index" type="service" id=".service_locator..5j7ZOn"/>
         <argument key="App\Controller\TesseraktCoursController::show" type="service" id=".service_locator..5j7ZOn"/>
+        <argument key="App\Controller\TesseraktCoursController::showCoursById" type="service" id=".service_locator..5j7ZOn"/>
         <argument key="App\Controller\TesseraktExerciceController::show" type="service" id=".service_locator..5j7ZOn"/>
         <argument key="App\Controller\TesseraktController:index" type="service" id=".service_locator..5j7ZOn"/>
         <argument key="App\Controller\TesseraktCoursController:show" type="service" id=".service_locator..5j7ZOn"/>
+        <argument key="App\Controller\TesseraktCoursController:showCoursById" type="service" id=".service_locator..5j7ZOn"/>
         <argument key="App\Controller\TesseraktExerciceController:show" type="service" id=".service_locator..5j7ZOn"/>
       </argument>
     </service>
@@ -5384,12 +5385,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.xVpwEMl"/>
+      <argument type="service" id=".service_locator.vZxI_2R"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.xVpwEMl"/>
+      <argument type="service" id=".service_locator.vZxI_2R"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface" public="false">
       <argument type="collection"/>
@@ -5777,7 +5778,7 @@
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.CmORmuK" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.xVpwEMl"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.vZxI_2R"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>

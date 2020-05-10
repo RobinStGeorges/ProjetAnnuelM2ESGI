@@ -20,7 +20,7 @@ class TesseraktExerciceController extends AbstractController
      */
     public function show(Environment $twig)
     {
-        $content = $twig->render('Tesserakt/Exercice/exercice.html.twig', ['name' => 'robin']);
+        $content = $twig->render('Tesserakt/Exercice/exercices.html.twig', ['name' => 'robin']);
 
         return new Response($content);
     }

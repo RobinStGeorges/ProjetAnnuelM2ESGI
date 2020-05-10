@@ -10,11 +10,11 @@ class AppFixtures extends Fixture
 {
     public function load(\Doctrine\Persistence\ObjectManager $manager)
     {
-        for ($count = 0; $count < 20; $count++) {
+        for ($count = 0; $count < 8; $count++) {
             $cours = new Cours();
             $cours->setTitle("Titre " . $count);
             $cours->setContent("content" . $count);
-            $cours->setPicturePath("imgDefault");
+            $cours->setPicturePath("imgDefault.png");
             $cours->setVideoPath("videoDefault");
             $manager->persist($cours);
         }

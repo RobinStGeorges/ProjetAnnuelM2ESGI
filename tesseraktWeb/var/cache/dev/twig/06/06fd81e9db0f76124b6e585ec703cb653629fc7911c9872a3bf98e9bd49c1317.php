@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* Tesserakt/Exercice/exercice.html.twig */
+/* Tesserakt/Exercice/exercices.html.twig */
 class __TwigTemplate_dcef5a56bab8686552a89f9e008b4e23bfc9aac22293e02dab4162cc3959224d extends Template
 {
     private $source;
@@ -34,10 +34,10 @@ class __TwigTemplate_dcef5a56bab8686552a89f9e008b4e23bfc9aac22293e02dab4162cc395
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "Tesserakt/Exercice/exercice.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "Tesserakt/Exercice/exercices.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "Tesserakt/Exercice/exercice.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "Tesserakt/Exercice/exercices.html.twig"));
 
         // line 2
         echo "
@@ -107,7 +107,7 @@ class __TwigTemplate_dcef5a56bab8686552a89f9e008b4e23bfc9aac22293e02dab4162cc395
 
     public function getTemplateName()
     {
-        return "Tesserakt/Exercice/exercice.html.twig";
+        return "Tesserakt/Exercice/exercices.html.twig";
     }
 
     public function isTraitable()
@@ -170,6 +170,6 @@ class __TwigTemplate_dcef5a56bab8686552a89f9e008b4e23bfc9aac22293e02dab4162cc395
     </div>
 
 </body>
-</html>", "Tesserakt/Exercice/exercice.html.twig", "C:\\Users\\robin\\Desktop\\tesseraktWeb\\templates\\Tesserakt\\Exercice\\exercice.html.twig");
+</html>", "Tesserakt/Exercice/exercices.html.twig", "C:\\Users\\robin\\Desktop\\tesseraktWeb\\templates\\Tesserakt\\Exercice\\exercices.html.twig");
     }
 }

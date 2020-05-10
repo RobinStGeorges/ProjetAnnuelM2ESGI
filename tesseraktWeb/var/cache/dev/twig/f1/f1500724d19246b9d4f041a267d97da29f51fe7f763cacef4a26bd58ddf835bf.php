@@ -64,13 +64,13 @@ class __TwigTemplate_c832fa2fb230455daa2c143db9ae3a14c1cfaaae93a655c8653cf3ab490
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
         <ul class=\"navbar-nav\">
             <li class=\"nav-item active\">
-                <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+                <a class=\"nav-link\" href=\"/index\">Home <span class=\"sr-only\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Cours</a>
+                <a class=\"nav-link\" href=\"/cours\">Cours</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Exercices</a>
+                <a class=\"nav-link\" href=\"/exercice\">Exercices</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"#\">Profil</a>
@@ -161,13 +161,13 @@ class __TwigTemplate_c832fa2fb230455daa2c143db9ae3a14c1cfaaae93a655c8653cf3ab490
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
         <ul class=\"navbar-nav\">
             <li class=\"nav-item active\">
-                <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+                <a class=\"nav-link\" href=\"/index\">Home <span class=\"sr-only\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Cours</a>
+                <a class=\"nav-link\" href=\"/cours\">Cours</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Exercices</a>
+                <a class=\"nav-link\" href=\"/exercice\">Exercices</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"#\">Profil</a>
@@ -207,6 +207,6 @@ class __TwigTemplate_c832fa2fb230455daa2c143db9ae3a14c1cfaaae93a655c8653cf3ab490
 
 </body>
 
-</html>", "Tesserakt/index.html.twig", "C:\\Users\\robin\\Desktop\\tesseraktWeb\\templates\\Tesserakt\\index.html.twig");
+</html>", "Tesserakt/index.html.twig", "C:\\Users\\robin\\Desktop\\ProjetM2\\ProjetAnnuelM2ESGI\\tesseraktWeb\\templates\\Tesserakt\\index.html.twig");
     }
 }

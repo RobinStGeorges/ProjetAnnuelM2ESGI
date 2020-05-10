@@ -15,13 +15,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Cours</a>
+                <a class="nav-link" href="/cours">Cours</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Exercices</a>
+                <a class="nav-link" href="/exercices">Exercices</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Profil</a>
@@ -32,15 +32,33 @@
 </nav>
     <div class="page">
         <div class="row">
-            <div class="col">
-                <div class="content">
-                    <h1> {{ title }}</h1>
+            <div class="content" style="width: 100%">
+                <center>
+                    <h1> Les cours disponibles</h1>
+                </center>
+
+                <div class="liste_de_cours">
+                    {% if listeCours is not defined or listeCours is empty   %}
+                        <p> Vous n'avez pas de cours diponible pour le moment ! </p>
+                    {% else %}
+                        <ul class="list-group">
+                            {% for cours in listeCours %}
+                            <li onclick="window.location.href ='/cours/'+{{ cours.id }};" class="list-group-item" style="color: darkgray">
+                                <div class="row">
+                                    <div class="col-8">
+                                        {{ cours.title }}
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="fit-picture" src="{{ asset('assets/web/' ~ cours.picturePath) }}">
+                                    </div>
+
+                                </div>
+                            </li> {#TODO : add picture in row, col#}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                 </div>
-            </div>
-            <div class="col">
-                <div class="content">
-                    <p>test</p>
-                </div>
+
             </div>
         </div>
     </div>

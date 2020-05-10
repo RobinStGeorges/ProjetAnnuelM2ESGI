@@ -26,3 +26,21 @@ P{
     border-style: solid;
     height: 80vh;
 }
+
+.liste_de_cours P{
+    text-align: left;
+    margin: 3%;
+}
+
+.liste_de_cours ul{
+    text-align: left;
+    margin: 3%;
+}
+
+.liste_de_cours li{
+    text-align: left;
+}
+
+.fit-picture {
+    width: 30%;
+}
