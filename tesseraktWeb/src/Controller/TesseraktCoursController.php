@@ -6,8 +6,9 @@ use Symfony\Component\Routing\Annotation\Route;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class TesseraktCoursController
+class TesseraktCoursController extends AbstractController
 {
 
     /**

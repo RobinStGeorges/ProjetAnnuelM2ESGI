@@ -5,8 +5,9 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class TesseraktExerciceController
+class TesseraktExerciceController extends AbstractController
 {
     /**
      * @param Environment $twig

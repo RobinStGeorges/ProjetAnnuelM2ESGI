@@ -43,3 +43,9 @@ cd6551,127.0.0.1,GET,http://127.0.0.1:8000/assets/css/~bootstrap/scss/bootstrap,
 ba6ebd,127.0.0.1,GET,http://127.0.0.1:8000/cours,1588989029,,200
 134317,127.0.0.1,GET,http://127.0.0.1:8000/assets/css/~bootstrap/scss/bootstrap,1588989031,e18235,404
 e18235,127.0.0.1,GET,http://127.0.0.1:8000/assets/css/~bootstrap/scss/bootstrap,1588989031,,404
+0f8631,127.0.0.1,GET,http://127.0.0.1:8000/index,1588991929,,200
+3f8b1a,127.0.0.1,GET,http://127.0.0.1:8000/assets/css/~bootstrap/scss/bootstrap,1588991931,55b6ea,404
+55b6ea,127.0.0.1,GET,http://127.0.0.1:8000/assets/css/~bootstrap/scss/bootstrap,1588991931,,404
+029c06,127.0.0.1,GET,http://127.0.0.1:8000/cours,1588991935,,200
+51016a,127.0.0.1,GET,http://127.0.0.1:8000/assets/css/~bootstrap/scss/bootstrap,1588991937,c87579,404
+c87579,127.0.0.1,GET,http://127.0.0.1:8000/assets/css/~bootstrap/scss/bootstrap,1588991937,,404

@@ -5,8 +5,9 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Twig\Environment;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class TesseraktController
+class TesseraktController extends AbstractController
 {
     /**
      * @param Environment $twig
@@ -14,6 +15,7 @@ class TesseraktController
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
+     *
      * @Route("/index")
      */
     public function index(Environment $twig)
