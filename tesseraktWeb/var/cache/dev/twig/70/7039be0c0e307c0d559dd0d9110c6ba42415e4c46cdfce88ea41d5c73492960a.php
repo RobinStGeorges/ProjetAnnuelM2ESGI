@@ -39,6 +39,80 @@ class __TwigTemplate_e3cd99c3d969b183e4de2f9c962f20b29cc48eacae097d7dd2173c3ad69
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "Tesserakt/Exercice/showExercice.html.twig"));
 
+        // line 2
+        echo "
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/main.css"), "html", null, true);
+        echo "\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("bootstrap-4.4.1-dist/css/bootstrap.css"), "html", null, true);
+        echo "\">
+</head>
+<body>
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+    <a class=\"navbar-brand\" href=\"#\">Tesserakt</a>
+    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+        <span class=\"navbar-toggler-icon\"></span>
+    </button>
+    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+        <ul class=\"navbar-nav\">
+            <li class=\"nav-item active\">
+                <a class=\"nav-link\" href=\"/index\">Home <span class=\"sr-only\">(current)</span></a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/exercice\">Cours</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/exercices\">Exercices</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/profil\">Profil</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class=\"page\">
+    <div class=\"row\">
+        <div class=\"content\" style=\"width: 100% ; height:100%\">
+            <center>
+                <h1>";
+        // line 37
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["exercice"]) || array_key_exists("exercice", $context) ? $context["exercice"] : (function () { throw new RuntimeError('Variable "exercice" does not exist.', 37, $this->source); })()), "title", [], "any", false, false, false, 37), "html", null, true);
+        echo "</h1>
+            </center>
+            <div class=\"row\">
+                <div class=\"col-6\">
+                    <div class=\"content\">
+                        ";
+        // line 42
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["exercice"]) || array_key_exists("exercice", $context) ? $context["exercice"] : (function () { throw new RuntimeError('Variable "exercice" does not exist.', 42, $this->source); })()), "content", [], "any", false, false, false, 42), "html", null, true);
+        echo "
+                    </div>
+
+                </div>
+
+                <div class=\"col-6\">
+                    <div class=\"videoContent\">
+                        ";
+        // line 49
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["exercice"]) || array_key_exists("exercice", $context) ? $context["exercice"] : (function () { throw new RuntimeError('Variable "exercice" does not exist.', 49, $this->source); })()), "videoPath", [], "any", false, false, false, 49), "html", null, true);
+        echo "
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -52,13 +126,76 @@ class __TwigTemplate_e3cd99c3d969b183e4de2f9c962f20b29cc48eacae097d7dd2173c3ad69
         return "Tesserakt/Exercice/showExercice.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array ();
+        return array (  104 => 49,  94 => 42,  86 => 37,  53 => 7,  49 => 6,  43 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("", "Tesserakt/Exercice/showExercice.html.twig", "C:\\Users\\robin\\Desktop\\ProjetM2\\ProjetAnnuelM2ESGI\\tesseraktWeb\\templates\\Tesserakt\\Exercice\\showExercice.html.twig");
+        return new Source("{# templates/base.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('assets/css/main.css') }}\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('bootstrap-4.4.1-dist/css/bootstrap.css') }}\">
+</head>
+<body>
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+    <a class=\"navbar-brand\" href=\"#\">Tesserakt</a>
+    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+        <span class=\"navbar-toggler-icon\"></span>
+    </button>
+    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
+        <ul class=\"navbar-nav\">
+            <li class=\"nav-item active\">
+                <a class=\"nav-link\" href=\"/index\">Home <span class=\"sr-only\">(current)</span></a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/exercice\">Cours</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/exercices\">Exercices</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/profil\">Profil</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class=\"page\">
+    <div class=\"row\">
+        <div class=\"content\" style=\"width: 100% ; height:100%\">
+            <center>
+                <h1>{{ exercice.title }}</h1>
+            </center>
+            <div class=\"row\">
+                <div class=\"col-6\">
+                    <div class=\"content\">
+                        {{ exercice.content }}
+                    </div>
+
+                </div>
+
+                <div class=\"col-6\">
+                    <div class=\"videoContent\">
+                        {{ exercice.videoPath }}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>", "Tesserakt/Exercice/showExercice.html.twig", "C:\\Users\\robin\\Desktop\\ProjetM2\\ProjetAnnuelM2ESGI\\tesseraktWeb\\templates\\Tesserakt\\Exercice\\showExercice.html.twig");
     }
 }

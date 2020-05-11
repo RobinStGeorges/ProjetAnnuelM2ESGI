@@ -81,14 +81,32 @@ class __TwigTemplate_65d7b41e98579ed19bebb4d6b945252528001bff43a365b69c44d124ff8
     <div class=\"row\">
         <div class=\"content\" style=\"width: 100% ; height:100%\">
             <center>
-                <h1> ";
+                <h1>";
         // line 37
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["cours"]) || array_key_exists("cours", $context) ? $context["cours"] : (function () { throw new RuntimeError('Variable "cours" does not exist.', 37, $this->source); })()), "title", [], "any", false, false, false, 37), "html", null, true);
         echo "</h1>
             </center>
+            <div class=\"row\">
+                <div class=\"col-6\">
+                    <div class=\"content\">
+                        ";
+        // line 42
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["cours"]) || array_key_exists("cours", $context) ? $context["cours"] : (function () { throw new RuntimeError('Variable "cours" does not exist.', 42, $this->source); })()), "content", [], "any", false, false, false, 42), "html", null, true);
+        echo "
+                    </div>
 
+                </div>
 
+                <div class=\"col-6\">
+                    <div class=\"videoContent\">
+                        ";
+        // line 49
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["cours"]) || array_key_exists("cours", $context) ? $context["cours"] : (function () { throw new RuntimeError('Variable "cours" does not exist.', 49, $this->source); })()), "videoPath", [], "any", false, false, false, 49), "html", null, true);
+        echo "
+                    </div>
 
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -115,7 +133,7 @@ class __TwigTemplate_65d7b41e98579ed19bebb4d6b945252528001bff43a365b69c44d124ff8
 
     public function getDebugInfo()
     {
-        return array (  86 => 37,  53 => 7,  49 => 6,  43 => 2,);
+        return array (  104 => 49,  94 => 42,  86 => 37,  53 => 7,  49 => 6,  43 => 2,);
     }
 
     public function getSourceContext()
@@ -156,11 +174,23 @@ class __TwigTemplate_65d7b41e98579ed19bebb4d6b945252528001bff43a365b69c44d124ff8
     <div class=\"row\">
         <div class=\"content\" style=\"width: 100% ; height:100%\">
             <center>
-                <h1> {{ cours.title }}</h1>
+                <h1>{{ cours.title }}</h1>
             </center>
+            <div class=\"row\">
+                <div class=\"col-6\">
+                    <div class=\"content\">
+                        {{ cours.content }}
+                    </div>
 
+                </div>
 
+                <div class=\"col-6\">
+                    <div class=\"videoContent\">
+                        {{ cours.videoPath }}
+                    </div>
 
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -62,13 +62,13 @@ class __TwigTemplate_05b5ffb74ed1e39b8efa7863dd5dfc06edf4de70399777081c0bb142734
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
         <ul class=\"navbar-nav\">
             <li class=\"nav-item active\">
-                <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+                <a class=\"nav-link\" href=\"/index\">Home <span class=\"sr-only\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Cours</a>
+                <a class=\"nav-link\" href=\"/cours\">Cours</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Exercices</a>
+                <a class=\"nav-link\" href=\"/exercices\">Exercices</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"#\">Profil</a>
@@ -77,23 +77,63 @@ class __TwigTemplate_05b5ffb74ed1e39b8efa7863dd5dfc06edf4de70399777081c0bb142734
         </ul>
     </div>
 </nav>
-    <div class=\"page\">
-        <div class=\"row\">
-            <div class=\"col\">
-                <div class=\"content\">
-                    <h1> ";
-        // line 37
-        echo twig_escape_filter($this->env, (isset($context["title"]) || array_key_exists("title", $context) ? $context["title"] : (function () { throw new RuntimeError('Variable "title" does not exist.', 37, $this->source); })()), "html", null, true);
-        echo "</h1>
-                </div>
-            </div>
-            <div class=\"col\">
-                <div class=\"content\">
-                    <p>test</p>
-                </div>
-            </div>
+<div class=\"page\">
+    <div class=\"row\">
+        <div class=\"content\" style=\"width: 100%\">
+            <center>
+                <h1> Les exercices disponibles</h1>
+            </center>
+
+            <div class=\"liste_de_exercices\">
+                ";
+        // line 41
+        if (( !(isset($context["listeExercices"]) || array_key_exists("listeExercices", $context)) || twig_test_empty((isset($context["listeExercices"]) || array_key_exists("listeExercices", $context) ? $context["listeExercices"] : (function () { throw new RuntimeError('Variable "listeExercices" does not exist.', 41, $this->source); })())))) {
+            // line 42
+            echo "                    <p> Vous n'avez pas d'exercice diponible pour le moment ! </p>
+                ";
+        } else {
+            // line 44
+            echo "                    <ul class=\"list-group\">
+                        ";
+            // line 45
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["listeExercices"]) || array_key_exists("listeExercices", $context) ? $context["listeExercices"] : (function () { throw new RuntimeError('Variable "listeExercices" does not exist.', 45, $this->source); })()));
+            foreach ($context['_seq'] as $context["_key"] => $context["exercice"]) {
+                // line 46
+                echo "                            <li onclick=\"window.location.href ='/exercice/'+";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["exercice"], "id", [], "any", false, false, false, 46), "html", null, true);
+                echo ";\" class=\"list-group-item\" style=\"color: darkgray\">
+                                <div class=\"row\">
+                                    <div class=\"col-8\">
+                                        ";
+                // line 49
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["exercice"], "title", [], "any", false, false, false, 49), "html", null, true);
+                echo "
+                                    </div>
+                                    <div class=\"col-4\">
+                                        <img class=\"fit-picture\" src=\"";
+                // line 52
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("assets/web/" . twig_get_attribute($this->env, $this->source, $context["exercice"], "imagePath", [], "any", false, false, false, 52))), "html", null, true);
+                echo "\">
+                                    </div>
+
+                                </div>
+                            </li>
+                        ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['exercice'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 58
+            echo "                    </ul>
+                ";
+        }
+        // line 60
+        echo "            </div>
+
         </div>
     </div>
+</div>
 
 </body>
 </html>";
@@ -117,7 +157,7 @@ class __TwigTemplate_05b5ffb74ed1e39b8efa7863dd5dfc06edf4de70399777081c0bb142734
 
     public function getDebugInfo()
     {
-        return array (  86 => 37,  53 => 7,  49 => 6,  43 => 2,);
+        return array (  132 => 60,  128 => 58,  116 => 52,  110 => 49,  103 => 46,  99 => 45,  96 => 44,  92 => 42,  90 => 41,  53 => 7,  49 => 6,  43 => 2,);
     }
 
     public function getSourceContext()
@@ -139,13 +179,13 @@ class __TwigTemplate_05b5ffb74ed1e39b8efa7863dd5dfc06edf4de70399777081c0bb142734
     <div class=\"collapse navbar-collapse\" id=\"navbarNav\">
         <ul class=\"navbar-nav\">
             <li class=\"nav-item active\">
-                <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+                <a class=\"nav-link\" href=\"/index\">Home <span class=\"sr-only\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Cours</a>
+                <a class=\"nav-link\" href=\"/cours\">Cours</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Exercices</a>
+                <a class=\"nav-link\" href=\"/exercices\">Exercices</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"#\">Profil</a>
@@ -154,20 +194,38 @@ class __TwigTemplate_05b5ffb74ed1e39b8efa7863dd5dfc06edf4de70399777081c0bb142734
         </ul>
     </div>
 </nav>
-    <div class=\"page\">
-        <div class=\"row\">
-            <div class=\"col\">
-                <div class=\"content\">
-                    <h1> {{ title }}</h1>
-                </div>
+<div class=\"page\">
+    <div class=\"row\">
+        <div class=\"content\" style=\"width: 100%\">
+            <center>
+                <h1> Les exercices disponibles</h1>
+            </center>
+
+            <div class=\"liste_de_exercices\">
+                {% if listeExercices is not defined or listeExercices is empty   %}
+                    <p> Vous n'avez pas d'exercice diponible pour le moment ! </p>
+                {% else %}
+                    <ul class=\"list-group\">
+                        {% for exercice in listeExercices %}
+                            <li onclick=\"window.location.href ='/exercice/'+{{ exercice.id }};\" class=\"list-group-item\" style=\"color: darkgray\">
+                                <div class=\"row\">
+                                    <div class=\"col-8\">
+                                        {{ exercice.title }}
+                                    </div>
+                                    <div class=\"col-4\">
+                                        <img class=\"fit-picture\" src=\"{{ asset('assets/web/' ~ exercice.imagePath) }}\">
+                                    </div>
+
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </div>
-            <div class=\"col\">
-                <div class=\"content\">
-                    <p>test</p>
-                </div>
-            </div>
+
         </div>
     </div>
+</div>
 
 </body>
 </html>", "Tesserakt/Exercice/exercices.html.twig", "C:\\Users\\robin\\Desktop\\ProjetM2\\ProjetAnnuelM2ESGI\\tesseraktWeb\\templates\\Tesserakt\\Exercice\\exercices.html.twig");

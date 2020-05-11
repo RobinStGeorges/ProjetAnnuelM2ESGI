@@ -15,13 +15,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Cours</a>
+                <a class="nav-link" href="/cours">Cours</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Exercices</a>
+                <a class="nav-link" href="/exercices">Exercices</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Profil</a>
@@ -30,20 +30,38 @@
         </ul>
     </div>
 </nav>
-    <div class="page">
-        <div class="row">
-            <div class="col">
-                <div class="content">
-                    <h1> {{ title }}</h1>
-                </div>
+<div class="page">
+    <div class="row">
+        <div class="content" style="width: 100%">
+            <center>
+                <h1> Les exercices disponibles</h1>
+            </center>
+
+            <div class="liste_de_exercices">
+                {% if listeExercices is not defined or listeExercices is empty   %}
+                    <p> Vous n'avez pas d'exercice diponible pour le moment ! </p>
+                {% else %}
+                    <ul class="list-group">
+                        {% for exercice in listeExercices %}
+                            <li onclick="window.location.href ='/exercice/'+{{ exercice.id }};" class="list-group-item" style="color: darkgray">
+                                <div class="row">
+                                    <div class="col-8">
+                                        {{ exercice.title }}
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="fit-picture" src="{{ asset('assets/web/' ~ exercice.imagePath) }}">
+                                    </div>
+
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </div>
-            <div class="col">
-                <div class="content">
-                    <p>test</p>
-                </div>
-            </div>
+
         </div>
     </div>
+</div>
 
 </body>
 </html>

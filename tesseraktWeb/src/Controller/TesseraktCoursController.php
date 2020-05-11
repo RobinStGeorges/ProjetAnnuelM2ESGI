@@ -8,12 +8,17 @@ use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 /**
- * @Route("/cours")
+ * Class TesseraktCoursController
+ * @package App\Controller
+ *
+ *
  */
 class TesseraktCoursController extends AbstractController
 {
+
 
     /**
      * @param Environment $twig
@@ -23,9 +28,9 @@ class TesseraktCoursController extends AbstractController
      * @throws SyntaxError
      *
      *
-     * @Route("/")
+     * @Route("/cours", name="cours_index")
      */
-    public function show(Environment $twig)
+    public function showAction(Environment $twig)
     {
         $repository = $this->getDoctrine()->getRepository(Cours::class);
         $listeCours = $repository->findAll();
@@ -34,23 +39,23 @@ class TesseraktCoursController extends AbstractController
         return new Response($content);
     }
 
+
     /**
-     * @param $id
+     * @Route("/cours/{id}", methods={"GET"})
+     * @param int $id
      * @param Environment $twig
      * @return Response
      * @throws LoaderError
      * @throws RuntimeError
      * @throws SyntaxError
-     * @Route("/{id}", methods={"GET"})
      */
-    public function showCoursById($id, Environment $twig)
+    public function showCoursByIdAction(int $id, Environment $twig)
     {
         $repository = $this->getDoctrine()->getRepository(Cours::class);
-        $cours = $repository->findBy(array('id' => $id));
-        $content = $twig->render('Tesserakt/Cours/cours.html.twig', ['cours' => $cours, 'title' => 'test title']);
+        $cours = $repository->find($id);
+        $content = $twig->render('Tesserakt/Cours/showCours.html.twig', ['cours' => $cours, 'title' => 'test title', 'id' => $id]);
 
         return new Response($content);
-
     }
 
 }

@@ -26,6 +26,13 @@ P{
     border-style: solid;
     height: 80vh;
 }
+.videoContent{
+    margin: 3%;
+    border-color: #F5B82E;
+    border-width : 2px ;
+    border-style: solid;
+    height: 80vh;
+}
 
 .liste_de_cours P{
     text-align: left;
